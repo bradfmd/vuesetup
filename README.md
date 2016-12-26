@@ -1,6 +1,7 @@
 # vuesetup
 
-> A Vue.js project
+This repo accompanies the following blog post:  
+[Vue.js - Project Setup](https://medium.com/@bradfmd/vue-js-project-setup-2b39fcc8867d#.t5x1peg37)
 
 ## Build Setup
 
