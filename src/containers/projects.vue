@@ -29,6 +29,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'projects',
   data: function () {
@@ -38,11 +40,8 @@ export default {
   },
   methods: {
     loadProjects: function () {
-      this.$http.get('http://www.mocky.io/v2/585e03ce100000b82c501e8e').then((response) => {
-        // depending on your api, you may or may not have to make the .json() call
-        // if your repsonse.body is null, try this
-        response.json()
-        this.projects = response.body
+      axios.get('http://www.mocky.io/v2/585e03ce100000b82c501e8e').then((response) => {
+        this.projects = response.data
       }, (err) => {
         console.log(err)
       })
